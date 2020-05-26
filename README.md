@@ -8,23 +8,25 @@ API çalıştırmadan önce gereken sistem gereksinimlerini https://laravel.com/
 
 Ardından
 
-composer update
+**composer update**
+
 **cp .env.example .env**
 
 **.env** dosyasına girip  db ayarlarını yapıyoruz
  
 
-veri tabanı ayarlarını yaptıktan sonra **php artisan migrate** yaparak tablolarımızı oluşturuyoruz.
+Veri tabanı ayarlarını yaptıktan sonra **php artisan migrate** yaparak tablolarımızı oluşturuyoruz.
 
-yukardaki işlemleri tamamladıktan sonra **php artisan serve** diyerek projeyi ayağa kaldırıyoruz.
+Yukardaki işlemleri tamamladıktan sonra **php artisan serve** diyerek projeyi ayağa kaldırıyoruz.
 
 
 ##### API Servisi ayağa kaldırdıktan sonra 
 
 ionic klasörüne girip ardından
 
-npm install
-ng serve komutları mobil uygulamayı ayağa kaldırın
+**npm install**
+
+**ng serve** komutları mobil uygulamayı ayağa kaldırın
 
 ##### API url adresini değiştirme
 
