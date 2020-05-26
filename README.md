@@ -2,11 +2,11 @@
 
 ##### Repoyu indirikten sonra  api klasörüne giriş yapın.
 
-Daha sonra sırasıyla
+
 
 API çalıştırmadan önce gereken sistem gereksinimlerini https://laravel.com/docs/7.x adresi üzerinden kontrol ediniz.
 
-Ardından
+Daha sonra sırasıyla
 
 **composer update**
 
@@ -26,12 +26,14 @@ ionic klasörüne girip ardından
 
 **npm install**
 
-**ng serve** komutları mobil uygulamayı ayağa kaldırın
+**ng serve** komutları mobil uygulamayı ayağa kaldırın.
 
 ##### API url adresini değiştirme
 
 ionic klasöründe src/app/todo.service.ts dosyasına girip  **url**  adresinden api servisinize ait url adresinizi değiştirebilirsiniz.
 
+
+ 
 
 #### Konu ile ilgili makaleler
 
