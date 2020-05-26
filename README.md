@@ -39,6 +39,11 @@ ionic klasöründe src/app/todo.service.ts dosyasına girip  **url**  adresinden
 
 **[Laravel + Ionic Todo Çalışması Part #1](https://medium.com/@mehmetkucuk/laravel-ionic-todo-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-part-1-2079cbe60cbf)**
 
-**[Laravel + Ionic Todo Çalışması Part #1](https://medium.com/@mehmetkucuk/laravel-ionic-todo-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-part-2-f63c49c363e8)**
+**[Laravel + Ionic Todo Çalışması Part #2](https://medium.com/@mehmetkucuk/laravel-ionic-todo-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-part-2-f63c49c363e8)**
 
 adreslerinden konu ile ilgili makalelere ulaşabilirsiniz.
+
+
+Konu ile ilgili sorularınızı **info@mehmetkucuk.me** mail adresinden iletebilirsiniz.
+
+Herkese iyi günler.
