@@ -1,0 +1,32 @@
+.spinner {
+  background: #efefef;
+  width: 100%;
+  text-align: center;
+}
+
+ion-list {
+  padding-top: 0;
+
+  ion-item {
+
+    --background: #efefef;
+    border-bottom: 1px solid #e8e1e1;
+
+    .date {
+      font-size: 12px;
+    }
+  }
+
+
+  ion-item-options {
+
+    background: #efefef;
+    vertical-align: middle;
+
+    ion-button {
+      --border-radius: 0;
+      margin-top: 9px;
+    }
+  }
+
+}

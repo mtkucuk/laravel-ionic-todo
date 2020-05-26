@@ -18,7 +18,7 @@ class CreateTodoTable extends Migration
             $table->string('title')->nullable();
             $table->longText('desc')->nullable();
             $table->dateTime('date')->nullable();
-            $table->enum('status', ['active', 'inactive']);
+            $table->tinyInteger('status');
             $table->timestamps();
         });
     }

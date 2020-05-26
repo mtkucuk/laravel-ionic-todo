@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+        <ion-title>
+            Todo
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="addTodoPage()">
+                <ion-icon name="add-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <div class="spinner">
+        <ion-spinner *ngIf="spinnerStatus==true"></ion-spinner>
+    </div>
+
+    <ion-list>
+        <ion-item-sliding *ngFor="let todo of todos">
+
+
+            <ion-item lines="none">
+                <ion-label class="ion-text-wrap">
+
+                    <ion-text>
+                        {{todo.title}}
+                    </ion-text>
+                    <ion-text>
+                        <p>{{todo.desc}}</p>
+                    </ion-text>
+                    <ion-text>
+                        <p class="date">
+                            <ion-icon name="today-outline"></ion-icon>
+                            {{todo.date}}
+                        </p>
+                    </ion-text>
+                </ion-label>
+
+                <ion-checkbox slot="end"
+                              [(ngModel)]="todo.status"
+                              (click)="statusUpdate(todo)"
+                ></ion-checkbox>
+
+            </ion-item>
+
+            <ion-item-options side="end">
+                <ion-button color="primary" (click)="editDetailPage(todo)">
+                    <ion-icon name="create-outline"></ion-icon>
+                </ion-button>
+                <ion-button color="danger" (click)="deleteTodo(todo)">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </ion-button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+
+</ion-content>

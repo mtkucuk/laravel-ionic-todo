@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Düzenleme</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <form   (ngSubmit)="editForm()">
+            <ion-item>
+                <ion-label>Başlık</ion-label>
+                <ion-input   type="text" [(ngModel)]="todo.title" name="title" ></ion-input>
+
+            </ion-item>
+            <ion-item>
+                <ion-label>Açıklama</ion-label>
+                <ion-textarea required="" [(ngModel)]="todo.desc" name="description"></ion-textarea>
+            </ion-item>
+            <ion-item>
+                <ion-label>Tarih</ion-label>
+                <ion-datetime  [(ngModel)]="todo.date" name="date"   pickerFormat="YYYY-MM-DD HH:mm"
+                               display-timezone="Europe/Istanbul" ></ion-datetime>
+
+            </ion-item>
+            <ion-item>
+                <ion-label>Durum</ion-label>
+                <ion-checkbox name="status" [(ngModel)]="todo.status" [value]="todo.status"></ion-checkbox>
+
+            </ion-item>
+
+            <ion-button (click)="editForm()" expand="full">Kaydet</ion-button>
+
+
+        </form>
+    </ion-list>
+</ion-content>
